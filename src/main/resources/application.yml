@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://localhost:3306/kona_db?createDatabaseIfNotExist=true
+    username: root
+    password: 1234Zaha
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+server:
+  port: 8083
+external:
+  api:
+    url: http://static.cricinfo.com/rss/livescores.xml
+
+jwt:
+  expire:
+    secret: zah007crackcodeiictbuet
+    hour: 5
+files:
+  upload:
+    path: /home/data
+
+query:
+  limit: 30
